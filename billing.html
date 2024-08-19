@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing - Clothing Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #E0FFFF; /* Light Cyan */
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .billing-container {
+            max-width: 600px;
+            margin: 2em auto;
+            padding: 2em;
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            color: #20B2AA; /* Light Sea Green */
+            text-align: center;
+        }
+        input {
+            width: 100%;
+            padding: 0.8em;
+            margin: 0.5em 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #20B2AA; /* Light Sea Green */
+            color: #fff;
+            border: none;
+            padding: 0.8em;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #2E8B57; /* Sea Green */
+        }
+    </style>
+</head>
+<body>
+    <div class="billing-container">
+        <h1>Billing Information</h1>
+        <form action="thankyou.html" method="post">
+            <input type="text" name="name" placeholder="Full Name" required>
+            <input type="text" name="address" placeholder="Address" required>
+            <input type="text" name="city" placeholder="City" required>
+            <input type="text" name="state" placeholder="State" required>
+            <input type="text" name="zip" placeholder="Zip Code" required>
+            <input type="text" name="cardnumber" placeholder="Card Number" required>
+            <input type="text" name="expdate" placeholder="Expiration Date (MM/YY)" required>
+            <input type="text" name="cvv" placeholder="CVV" required>
+            <button type="submit">Submit Payment</button>
+        </form>
+    </div>
+</body>
+</html>
